@@ -1,3 +1,4 @@
+//Navbar Start
 const header = document.querySelector("header");
 
 window.addEventListener ("scroll", function() {
@@ -16,3 +17,5 @@ window.onscroll = () => {
 	menu.classList.remove('#menu-icon');
 	navbar.classList.remove('open');
 };
+//Navbar End
+
