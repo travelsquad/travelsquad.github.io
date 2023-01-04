@@ -154,7 +154,9 @@ header{
 	background: rgba(0, 0, 0, 0.3);
 	position: absolute;
 } */
-
+.home-text{
+	margin-top: 50px;
+}
 .home-text h1{
 	font-size: var(--big-font);
 	line-height: 1.2;
@@ -175,8 +177,7 @@ header{
 } */ 
 
 
-/* Rotating Block Start */
-
+/* ------------Rotating Block Start ------------*/
 .rotating-block{
 	position: relative;
 	height: 70px;
@@ -214,7 +215,7 @@ header{
 	  }
 }
 
-/* Rotating Block End */
+/* ---------------Rotating Block End------------------ */
 
 
 
