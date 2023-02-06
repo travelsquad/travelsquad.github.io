@@ -22,6 +22,7 @@ body{
 	color: var(--text-color);
 	width: 100%;
 	height: 100%;
+	
 }
 
 /*Header*/
@@ -587,7 +588,7 @@ header.sticky{
 	letter-spacing: 2px;
 }
 
-/*when veiwing on phone screen*/ 
+/*when veiwing on Desktop/Laptop screen*/ 
 @media (max-width: 1400px){
 	header{
 		padding: 10px 3%;
@@ -609,6 +610,9 @@ header.sticky{
 	}
 }
 
+/*when veiwing on Desktop screen*/ 
+
+
 @media (max-width: 1040px){
 	#menu-icon{
 		display: block;
@@ -618,6 +622,7 @@ header.sticky{
 	}
 	.home{
 		height: 88vh;
+		width:100%;
 	}
 	.navbar{
 		position: absolute;
@@ -651,7 +656,7 @@ header.sticky{
 	}
 }
 
-@media (max-width: 575px){
+@media (max-width: 800px){
 	.list{
 		width: 100%;
 	}
@@ -669,5 +674,9 @@ header.sticky{
 	.home{
 		height: 85vh;
 		transition: .2s;
+		
+	}
+	.section {
+		padding: 0px;
 	}
 }
