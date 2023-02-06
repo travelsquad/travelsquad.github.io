@@ -37,7 +37,7 @@ header{
 	justify-content: space-between;
 	background: rgba(0, 0, 0, 0.6);
 	/* padding: 30px 18%; */
-	padding: 10px 18%;
+	/* padding: 10px 18%; */
 	transition: ease .40s;
 }
 /* header:after {
@@ -658,10 +658,10 @@ header.sticky{
 
 @media (max-width: 800px){
 	.body{
-		width: 800px;
+		width: 750px;
 	}
 	.header{
-		width: 800px;
+		width: 750px;
 	}
 	.list{
 		width: 100%;
