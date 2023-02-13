@@ -254,7 +254,7 @@ header{
 	transform: scale(1.1);
 }
 
-span { font-size: 60%; font-weight: normal }
+/* span { font-size: 60%; font-weight: normal } */
 
 /*Keep Header at top of the page*/
 header.sticky{
@@ -326,7 +326,7 @@ header.sticky{
 /* Gallery*/
 .title{
 	text-align: center;
-	margin-top: 30px;
+	margin-top: 5rem;
 }
 .title h2{
 	font-size: var(--h2-font);
@@ -724,4 +724,40 @@ Desktop: 1440px - 1920px (iMac, Dell Optiplex, etc.)
 	.home-text h1{
 	 font: weight 900px; ;
 	}
+}
+@media (max-width: 390px) {
+	:root{
+	  --big-font: 3rem;
+	  --h2-font: 2rem;
+	  --p-font: 1rem;
+	}
+	.body{
+		width: 100%;
+		right: 0;
+	}
+	header {
+	  padding: 5px 3%;
+	}
+   
+	.home-text {
+		margin-top: 100px;
+	}
+	.explore{
+		font-size: 3.5rem !important;
+	}
+	.home-text h1{
+	 	font-weight: 900;
+	}
+	.home-list{
+		font-size: var(--p-font);
+		font-weight: 600;
+	}
+	.title{
+		margin-top: 3rem;
+		
+	}
+	.gallery-content{
+		 margin-top: 3rem;
+	}
+
 }
