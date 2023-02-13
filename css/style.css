@@ -742,9 +742,9 @@ Desktop: 1440px - 1920px (iMac, Dell Optiplex, etc.)
 	.home-text {
 		margin-top: 100px;
 	}
-	.explore{
-		/* font-size: 3.5rem !important; */
-	}
+	/* .explore{
+		font-size: 3.5rem !important;
+	} */
 	.home-text h1{
 	 	font-weight: 900;
 	}
