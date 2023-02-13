@@ -131,7 +131,7 @@ header{
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 100%;
+	height: 100vh;
 	overflow: hidden;
 	/* background-image:image-set("C:\Users\ezips\OneDrive\Documents\Travel Website\img\toledo-landing-img.png") no-repeat center; */
 	z-index: -1;
@@ -139,7 +139,7 @@ header{
 
 .video-container video {
 	min-width: 100%;
-	min-height: 100%;
+	min-height: 100vh;
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -543,7 +543,7 @@ header.sticky{
 	color: var(--bg-color);
 	margin-bottom: 30px;
 	position: relative;
-}
+}∙
 .list h4::before{
 	content: "";
 	position: absolute;
@@ -705,7 +705,7 @@ Desktop: 1440px - 1920px (iMac, Dell Optiplex, etc.)
 /* Media query for phone screens */
 @media (max-width: 414px) {
 	:root{
-	  --big-font: 3rem;
+	  --big-font: 3.5rem;
 	  --h2-font: 2rem;
 	  --p-font: 1rem;
 	}
