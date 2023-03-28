@@ -1,0 +1,24 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ONLINE REPUBLIC//NONSGML Booking Confirmation//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+DTSTAMP:20230219T045100Z
+UID:63f1aab4c79a2ONLINEREPUBLICCOM
+LOCATION:from Dublin to Dublin
+DESCRIPTION:Your booking with Bunk Campers Ireland\n\nBooking number: IM39196272\nReference number: 6TL8SF\n\nPick Up Location: Dublin\nUnit 7B, Advance Business Park. Old Airport Road, Cloghran, Dublin\n\nDrop Off Location: Dublin\nUnit 7B, Advance Business Park. Old Airport Road, Cloghran, Dublin
+SUMMARY:Your booking with Bunk Campers Ireland
+ORGANIZER;CN=Bunk Campers Ireland:MAILTO:enquiries@bunkcampers.com
+DTSTART;TZID=/Europe/Dublin:20230314T150000
+DTEND;TZID=/Europe/Dublin:20230320T110000
+X-WR-TIMEZONE:Europe/Dublin
+STATUS:CONFIRMED
+BEGIN:VTIMEZONE
+TZID:Europe/Dublin
+END:VTIMEZONE
+BEGIN:VALARM
+TRIGGER:-PT60M
+ACTION:DISPLAY
+END:VALARM
+END:VEVENT
+END:VCALENDAR
