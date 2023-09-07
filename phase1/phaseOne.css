@@ -29,10 +29,10 @@ header{
 	position: fixed;
 	top: 0;
 	right: 0;
-	width: 100%;
+	width:100%;
 	z-index: 10;
 	display: flex;
-	align-items: center;
+	align-items:flex-start;
 	justify-content: space-between;
 	background: rgba(0, 0, 0, 0.6);
 	/* padding: 30px 18%; */
