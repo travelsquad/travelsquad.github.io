@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Section Preview</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #6C5B7B, #C06C84, #F67280, #FFC285, #FFD6A2, #FFE5B4, #FFF3CC);
+            color: white;
+            height: 200vh;
+        }
+
+        #preview-landing-section {
+            width: 100%;
+            padding: 50px 0;
+        }
+
+        .preview-landing-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .text-content {
+            flex: 1;
+            padding-right: 20px;
+        }
+
+        .preview-landing-3D-element {
+            flex: 1;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+            min-height: 300px;
+        }
+
+        .preview-landing-gradient-text {
+            background: linear-gradient(45deg, #6C5B7B, #C06C84, #F67280);
+            -webkit-background-clip: text;
+            color: transparent;
+            font-size: 3rem;
+        }
+
+        @media (max-width: 768px) {
+            .preview-landing-content {
+                flex-direction: column-reverse;
+                text-align: center;
+            }
+
+            .text-content, .preview-landing-3D-element {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section id="preview-landing-section">
+        <div class="preview-landing-content">
+            <div class="text-content">
+                <h1 class="preview-landing-gradient-text">Welcome to Shidduch Hub</h1>
+                <p>Your perfect match is just a click away.</p>
+            </div>
+            
+            <div class="preview-landing-3D-element">
+                <!-- Placeholder for 3D element. -->
+            </div>
+        </div>
+    </section>
+</body>
+</html>

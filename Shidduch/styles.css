@@ -1,0 +1,198 @@
+
+body {
+    font-family: Raleway, sans-serif;
+    font-size: 20px;  /* Increase base font size */ 
+    background: linear-gradient(45deg, #6C5B7B, #C06C84, #F67280);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Styles for the top left logo */
+#top-left-logo {
+    position: fixed;  /* Fixed position ensures it stays in place when scrolling */
+    top: 10px;  /* Offset from the top */
+    left: 10px;  /* Offset from the left */
+    width: 100px;  /* Adjust based on the desired size of your logo */
+    z-index: 2000;  /* Ensure the logo stays on top of other elements */
+}
+
+
+/* Styles for Pill-shaped Header Bar */
+
+.pill-header {
+    position: absolute;
+    top: 0;
+    left: 50%;  /* Adjusted for centering */
+    transform: translateX(-50%);  /* Adjusted for centering */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 2%;  /* Slight padding adjustment */
+    max-width: 1000px;  /* Set a max-width to limit stretching */
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 20px;
+    margin: 15px auto;  /* Auto margins for horizontal centering */
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.pill-button {
+    text-decoration: none;  /* Removes the default underlining of anchor tags */
+    background: none;
+    border: none;
+    border-radius: 12px;  /* Adjusted for a more pill-like shape */
+    padding: 4px 10px;  /* Adjusted padding for a sleeker look */
+    margin: 0 10px;  /* Added margin to space out the buttons */
+    color:  #FFC285;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;  /* Added transition for smoothness */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);  /* Added shadow for depth */
+    width: 120px;  /* Fixed width for the button */
+    height: 40px;  /* Fixed height for the button */
+    display: flex;  /* Using flex to center the text both vertically and horizontally */
+    justify-content: center;
+    align-items: center;
+}
+
+.pill-button:hover {
+    background: linear-gradient(45deg, #F67280, #FFC285, #FFD6A2);
+    transform: scale(1.05);  /* Slight growth on hover for interaction feedback */
+    color: #ffff;
+}
+
+/* Adjustments for active state (when button is clicked) */
+.pill-button:active {
+    background: linear-gradient(45deg, #F67280, #FFC285, #FFD6A2);
+}
+
+/*    End Pill Header    */
+
+.gradient-text {
+    background: linear-gradient(45deg, #F67280, #FFC285, #FFD6A2);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: inline; /* Important for inline elements like span */
+}
+
+.container {
+    text-align: center;
+    width: 90%;  /* Increase width a bit */
+    max-width: 900px;  /* Increase max-width */
+}
+
+
+.signup-form {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    width: 60%;  /* Set a specific width for the form */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input {
+    padding: 15px;     /* Increase padding */
+    margin: 15px;      /* Increase margin */
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 15px;   /* Increase font size */
+}
+
+button {
+    padding: 10px 5px;  /* Increase padding */
+    border: none;
+    border-radius: 10px;
+    background:linear-gradient(45deg, #F67280, #FFC285, #FFD6A2);
+    color: #ffff;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-size: 18px;     /* Increase font size */
+}
+
+button:hover {
+    background: linear-gradient(45deg, #6C5B7B, #C06C84, #F67280);
+    color: #ffff;
+}
+
+
+/* ... (Existing styles for mobile layout) ... */
+
+/* Media Query for larger screens */
+@media (min-width: 768px) {
+    .signup-form {
+        flex-direction: row;  /* Input fields side by side */
+        justify-content: center; /* Center align the input fields */
+    }
+    
+    .signup-form input {
+        width: 45%;  /* Allow for some space between inputs */
+        margin: 0 10px;  /* Horizontal margin only */
+    }
+
+    .signup-form button {
+        width: 100%;
+        margin-top: 20px;  /* Space above the button */
+    }
+
+    .container h1 {
+        font-size: 3em;  /* Larger headline */
+        margin-bottom: 40px;  /* Space below the headline */
+    }
+}
+
+
+/* ... (Existing styles for mobile layout) ... */
+
+/* Media Query for larger screens */
+@media (min-width: 768px) {
+    .signup-form {
+        flex-direction: column;  /* Stack children vertically */
+        align-items: center;     /* Center align children horizontally */
+    }
+    
+    .signup-form div.input-wrapper {
+        display: flex;          /* Make the div a flex container */
+        justify-content: center; /* Center align the input fields */
+        width: 100%;            /* Take full width */
+    }
+
+    .signup-form input {
+        width: 48%;  /* Width for inputs */
+        margin: 0 1%;  /* Small margin for separation */
+    }
+
+    .signup-form button {
+        width: 50%;  /* Width of button */
+        margin-top: 20px;  /* Space above the button */
+    }
+
+    .container h1 {
+        font-size: 3em;  /* Larger headline */
+        margin-bottom: 40px;  /* Space below the headline */
+    }
+}
+
+/* Styles for Phone Screens */
+@media (max-width: 768px) {
+    .pill-header {
+        padding: 5px 1%;  /* Reduced padding for mobile */
+        max-width: 90%;  /* Adjusted max-width */
+        margin: 10px auto;  /* Adjusted margin */
+    }
+
+    .pill-button {
+        width: 90px;  /* Reduced button width */
+        height: 30px;  /* Reduced button height */
+        font-size: 0.8rem;  /* Reduced font size */
+        margin: 0 5px;  /* Adjusted margin for spacing */
+    }
+}
+

@@ -1,0 +1,112 @@
+/* Explanation in JS tab */
+
+/* Cool font from Google Fonts! */
+@import url('https://fonts.googleapis.com/css?family=Raleway:900&display=swap');
+
+body {
+	margin: 0px;
+}
+
+#container {
+	/* Center the text in the viewport. */
+	position: absolute;
+	margin: auto;
+	width: 100vw;
+	height: 80pt;
+	top: 0;
+	bottom: 0;
+	
+	/* This filter is a lot of the magic, try commenting it out to see how the morphing works! */
+	filter: url(#threshold) blur(0.6px);
+}
+
+/* Your average text styling */
+#text1, #text2 {
+	position: absolute;
+	width: 100%;
+	display: inline-block;
+	color: #ffff;
+	font-family: 'Raleway', sans-serif;
+	font-size: 80pt;
+	
+	text-align: center;
+	
+	user-select: none;
+}
+
+
+/* ... (Existing styles) ... */
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* ... (Existing styles) ... */
+
+body {
+    /* ... other styles ... */
+    background: linear-gradient(to bottom, #6C5B7B, #C06C84, #F67280, #FFC285, #FFD6A2);
+}
+
+
+.scroll-section {
+    height: 200vh;  /* This will make the section twice the height of the viewport */
+}
+
+/*    Form Section     */
+
+.form-section {
+    margin-top: 50px;
+    text-align: center;
+}
+
+form input, form select, form textarea {
+    padding: 12px 15px;
+    margin: 15px 0;
+    border: 2px solid #FFD6A2;
+    border-radius: 8px;
+    outline: none;
+    font-size: 16px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    width: auto;  /* Let the inputs adjust their widths based on content */
+    display: block;  /* Make the inputs stack vertically */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form select {
+    /* Provide a default width for dropdowns since they don't have placeholders */
+    width: 50%;
+}
+
+form input:focus, form select:focus, form textarea:focus {
+    border-color: #F67280;
+    box-shadow: 0 0 10px rgba(246, 114, 128, 0.5);
+}
+
+form input::placeholder, form textarea::placeholder {
+    color: #FFC285;
+    opacity: 0.7;
+}
+
+form button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    background: #F67280;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s, transform 0.2s;
+    display: block;  /* Center the button */
+    margin: 20px auto 0 auto;  /* Top margin for spacing, auto for centering */
+}
+
+form button:hover {
+    background: #C06C84;
+    transform: translateY(-2px);
+}
+
+form button:active {
+    transform: translateY(0);
+}

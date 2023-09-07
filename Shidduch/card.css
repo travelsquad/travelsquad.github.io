@@ -1,0 +1,128 @@
+@property --rotate {
+  syntax: "<angle>";
+  initial-value: 132deg;
+  inherits: false;
+}
+
+:root {
+  --card-height: 50vh;
+  --card-width: calc(var(--card-height) / 1.5);
+}
+
+/* Styles for the top left logo */
+#top-left-logo {
+  position: fixed;  /* Fixed position ensures it stays in place when scrolling */
+  top: 10px;  /* Offset from the top */
+  left: 10px;  /* Offset from the left */
+  width: 100px;  /* Adjust based on the desired size of your logo */
+  z-index: 2000;  /* Ensure the logo stays on top of other elements */
+}
+
+body {
+  min-height: 100vh;
+  background: #6C5B7B;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 9rem;
+  padding-bottom: 2rem;
+  box-sizing: border-box;
+}
+
+/* Container for all cards */
+.cards-container {
+  display: flex;  /* Use flexbox to lay out cards horizontally */
+  justify-content: space-between;  /* Add space between the cards */
+  align-items: center;  /* Vertically center the cards */
+  padding: 20px;  /* Some space around the container */
+  max-width: 1000px;  /* Maximum width to constrain the container */
+  margin: 0 auto;  /* Center the container on the page */
+}
+
+/* Adjustments to the individual card */
+.card {
+  margin: 0 10px;  /* Adds a margin of 10px to the left and right of each card */
+  width: 280px;  /* Adjusted width to fit three cards with spacing */
+
+}
+
+
+.card {
+  background: #6C5B7B;
+  width: var(--card-width);
+  height: var(--card-height);
+  padding: 3px;
+  position: relative;
+  border-radius: 6px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  font-size: 1.5em;
+  color: rgb(88 199 250 / 0%);
+  cursor: pointer;
+  font-family: cursive;
+}
+
+.card:hover {
+  color: rgb(88 199 250 / 100%);
+  transition: color 1s;
+}
+.card:hover:before, .card:hover:after {
+  animation: none;
+  opacity: 0;
+}
+
+
+.card::before {
+  content: "";
+  width: 104%;
+  height: 102%;
+  border-radius: 8px;
+  background-image: linear-gradient(
+    var(--rotate)
+    , #F67280, #FFC285 43%, #FFD6A2);
+    position: absolute;
+    z-index: -1;
+    top: -1%;
+    left: -2%;
+    animation: spin 2.5s linear infinite;
+}
+
+.card::after {
+  position: absolute;
+  content: "";
+  top: calc(var(--card-height) / 6);
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  transform: scale(0.8);
+  filter: blur(calc(var(--card-height) / 6));
+  background-image: linear-gradient(
+    var(--rotate)
+    , #F67280, #FFC285 43%, #FFD6A2);
+    opacity: 1;
+  transition: opacity .5s;
+  animation: spin 2.5s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    --rotate: 0deg;
+  }
+  100% {
+    --rotate: 360deg;
+  }
+}
+
+a {
+  color: #F67280;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-top: 2rem;
+}
+
