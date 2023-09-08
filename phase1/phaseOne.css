@@ -19,14 +19,12 @@
 
 body {
 	font-family: 'Poppins', sans-serif;
-	margin: 0;
+	
 	padding: 0;
 	background: linear-gradient(to bottom, #6C5B7B, #C06C84, #F67280, #FFC285, #FFD6A2, #FFE5B4, #FFF3CC);
 	color: white;
-	height: 100vh;
-	justify-content: center;
-	
-}
+	height: 200vh;
+	}
 
 /*Header*/
 header{
@@ -55,7 +53,8 @@ header{
 #preview-landing-section {
 	width: 100%;
 	padding: 70px 45px;
-	justify-content: center;
+	margin-bottom: 20px;
+	/* justify-content: center; */
 }
 
 /* .preview-landing-content {
@@ -65,37 +64,32 @@ header{
 	max-width: 1200px;
 	margin: 0 auto;
 } */
-.preview-landing-content {
+.elements-3D-container {
 	display: flex;
-	flex-direction: column-reverse;
+	flex-direction: column;
 	text-align: center;
 	justify-content: center;
-	
+	align-items: center;
+	height: 100%;
+	width: 100%;
 }
 
-.text-content, .preview-landing-3D-element {
-	padding: 20px;
-	justify-content: center;
-}
-.text-content {
-	flex: 1;
-	padding-right: 20px;
-}
-.preview-landing-gradient-text {
+/* .preview-landing-gradient-text {
 	background: linear-gradient(45deg, #6C5B7B, #C06C84, #F67280);
 	-webkit-background-clip: text;
 	color: transparent;
-	font-size: 3rem;
-	justify-content: center;
-}
+	font-size: 3rem; }
+ */
 
-.preview-landing-3D-element {
+.first-3D-element {
 	flex: 1;
 	background: rgba(255, 255, 255, 0.1);
 	border-radius: 15px;
 	box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
 	min-height: 100px;
 	justify-content: center;
+	padding: 10px 5px; /* Add padding for spacing */
+	
 }
 
 .hype{
@@ -113,4 +107,103 @@ header{
 	font-size: 15px;
 }
 
+.second-3D-element{
+	background: rgba(255, 255, 255, 0.1);
+	border-radius: 15px; /* Optional: Add rounded corners */
+	box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+	min-height: 300px;
+	justify-content: center;
+	position: relative;
+	padding: 20px;
+	align-items: center;
+	margin-bottom: 20px;
+}
+.second-3D-element:hover{
+	transform: scale(1.04);
+}
 
+
+.first-3D-element, .second-3D-element{
+   
+	margin: 10px; /* Add margin for spacing between elements */
+	width: 100%;
+	
+}
+
+/* pdf section */
+.pdf{
+	position: relative;
+	transition: all .3s cubic-bezier(.445,.05,.55,.95);
+	will-change: filter;
+	cursor: pointer;
+	z-index: 1;
+	justify-content: center;
+	align-items: center;
+}
+.pdf img{
+	width: 100%;
+	height: auto;
+	display: flex;
+	border-radius: 15px;
+}
+.pdf:hover{
+	/* filter: brightness(100%) hue-rotate(45deg); */
+	transform: scale(1.04);
+}
+.preview-text{
+	position: absolute;
+	display: flex;
+	z-index: 2;
+	top: 10px;
+	right: 50px;
+	font-size: 20px;
+	font-weight: 600;
+}
+
+/* PDF logo "Font"*/
+.pdf-logo, .fa-solid, .fa-file-pdf{
+	position: absolute;
+	top: 95px;
+	right: 5px;
+	height: 40px;
+	width: 40px;
+	color: white;
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 30px;
+	transition: .3s;
+	margin-right: 2px;
+	margin-top: 30px;
+	z-index: 2;
+}
+/* Text before questions */
+.third-3D-element{
+	width: 100%;
+	margin-top: 10px;
+	padding:20px;
+	position: relative;
+	flex: 1;
+	background: rgba(255, 255, 255, 0.1);
+	border-radius: 15px;
+	box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+	min-height: 100px;
+	/* justify-content: center; */
+	width: 100%;
+	text-align: center;
+}
+
+
+.text-content{
+	position:relative;
+	font-size: 15px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	color: var(--text-color);	
+	text-align: center;
+	padding: 0px;
+}
+
+.text-content p{
+	font-size: 15px;
+}
