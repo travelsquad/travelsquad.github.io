@@ -8,51 +8,109 @@
 	scroll-behavior: smooth;
 }
 :root{
-	--bg-color: #fff;
-	--text-color: #221314;
-	--second-color: #5a7184;
+	--bg-color: #FFF3CC;
+	--text-color: #fff;
+	--second-color: rgba(0, 0, 0, 0.6);
 	--main-color: #f15926;
 	--big-font: 5rem;
 	--h2-font: 3rem;
 	--p-font: 1.1rem;
 }
-body{
-	background: var(--bg-color);
-	color: var(--text-color);
-	width: 100%;
-	height: 100%;
+
+body {
+	font-family: 'Poppins', sans-serif;
+	margin: 0;
+	padding: 0;
+	background: linear-gradient(to bottom, #6C5B7B, #C06C84, #F67280, #FFC285, #FFD6A2, #FFE5B4, #FFF3CC);
+	color: white;
+	height: 100vh;
+	justify-content: center;
 	
 }
 
 /*Header*/
 header{
-	position: fixed;
+	position: absolute;
 	top: 0;
 	right: 0;
-	width:100%;
+	justify-content: center;
+	width: 100%;
 	z-index: 10;
 	display: flex;
-	align-items:flex-start;
-	justify-content: space-between;
-	background: rgba(0, 0, 0, 0.6);
-	/* padding: 30px 18%; */
-	/* padding: 10px 18%; */
 	transition: ease .40s;
 }
-/* header:after {
-	content: '';
-	z-index: 1;
-	height: 100%;
-	width: 100%;
-	top: 0;
-	left: 0;
-	background: rgba(0, 0, 0, 0.3);
-	position: absolute;
-}  */
+
 
 .logo{
 	font-size: 35px;
 	font-weight: 600;
 	letter-spacing: 1px;
 	color: var(--bg-color);
+	padding: 10px;
 }
+
+
+
+
+#preview-landing-section {
+	width: 100%;
+	padding: 70px 45px;
+	justify-content: center;
+}
+
+/* .preview-landing-content {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	max-width: 1200px;
+	margin: 0 auto;
+} */
+.preview-landing-content {
+	display: flex;
+	flex-direction: column-reverse;
+	text-align: center;
+	justify-content: center;
+	
+}
+
+.text-content, .preview-landing-3D-element {
+	padding: 20px;
+	justify-content: center;
+}
+.text-content {
+	flex: 1;
+	padding-right: 20px;
+}
+.preview-landing-gradient-text {
+	background: linear-gradient(45deg, #6C5B7B, #C06C84, #F67280);
+	-webkit-background-clip: text;
+	color: transparent;
+	font-size: 3rem;
+	justify-content: center;
+}
+
+.preview-landing-3D-element {
+	flex: 1;
+	background: rgba(255, 255, 255, 0.1);
+	border-radius: 15px;
+	box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+	min-height: 100px;
+	justify-content: center;
+}
+
+.hype{
+	position:relative;
+	font-size: 15px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	color: var(--text-color);	
+	text-align: center;
+}
+.hype h1{
+	font-size: 20px;
+}
+.hype h2{
+	font-size: 15px;
+}
+
+
